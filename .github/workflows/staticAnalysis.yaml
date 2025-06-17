@@ -1,7 +1,7 @@
 name: Static Analysis
 on:
   pull_request:
-    paths: ['.github/workflows/*.ya?ml']
+    paths: [".github/workflows/*.ya?ml"]
   defaults:
     run:
       shell: bash
@@ -15,4 +15,4 @@ on:
       steps:
         - uses: actions/checkout@v4
         - run: |
-          docker run --rm v "$(pwd):$(pwd)" -w "$(pwd)" rhysd/actionlint:latest
+            docker run --rm v "$(pwd):$(pwd)" -w "$(pwd)" rhysd/actionlint:latest
