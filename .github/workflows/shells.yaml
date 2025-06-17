@@ -1,5 +1,7 @@
 name: Change shell
 on: push
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref}}
 jobs:
   print:
     runs-on: ubuntu-latest
