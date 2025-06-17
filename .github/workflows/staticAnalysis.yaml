@@ -2,7 +2,7 @@ name: Static Analysis
 on:
   pull_request:
     paths: [".github/workflows/*.ya?ml"]
-  defaults:
+  default:
     run:
       shell: bash
   concurrency:
