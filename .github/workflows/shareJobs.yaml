@@ -1,8 +1,8 @@
-name: Srare fob data
+name: Srare job data
 on: push
 jobs:
   before:
-    suns-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - id: generate
         run: echo "result=Hello" >> "${GITHUB_OUTPUT}"
