@@ -1,4 +1,4 @@
-name: Srare job data
+name: Share job data
 on: push
 jobs:
   before:
